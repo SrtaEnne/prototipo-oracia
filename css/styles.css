@@ -1,16 +1,24 @@
+/* fonte padrão das letras */
 *{
 	font-family: 'Saira Extra Condensed', sans-serif;
+	scroll-behavior: auto;
 }
 
+body{
+	background-color: #fafafa;
+}
+
+/* opções do navbar*/
 .nav-components{
 	color: black;
 }
 
+/* background do parallax*/
 #parallax {
-	background-color: red; /* For browsers that do not support gradients */
+	background-color: #00ffffff; /* For browsers that do not support gradients */
 	background-image: linear-gradient(-90deg, #7337d4, #00ffffff) !important; /* Standard syntax (must be last) */
 }
-
+/* título do parallax */
 #parallax-title{
 	text-align: center;
 	color: white;
@@ -18,6 +26,8 @@
 	margin-top: 80px;
 	font-weight: bold;
 }
+
+/* subtítulo do parallax*/
 #parallax-subtitle{
 	text-align: center;
 	color: white;
@@ -26,9 +36,51 @@
 	font-weight: bold;
 }
 
+/* detalhe[traço] do parallax*/
 #parallax-traco{
 	font-size: 30px;
 	margin-top: -60;
 	text-align: center;
 	color: white;
+}
+
+/* tamanho do canvas */
+/*#chartsDonuts{
+	height: 80% !important;
+	width: 80% !important;
+}*/
+
+/* formatação do título dos parágrafos */
+.paragraph-title{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+/* formatação do texto do parágrafo */
+.paragraph-text{
+	font-size: 19px;
+	text-align: justify;
+	/*text-indent:2em;*/ /* recuo na primeira linha */
+}
+
+#ul-objetivo{
+	margin-left: 50px;
+	font-size: 19.5px;
+	font-weight: bold;
+}
+
+.li-especfication{
+	font-size: 18px;
+	font-weight: normal;
+	list-style-type: circle !important;
+	margin-left: 35px;
+}
+
+.footer-background{
+	background-image: linear-gradient(-90deg, #7337d4, #00ffffff) !important; /* Standard syntax (must be last) */
+
+}
+
+#btn-submit{
+	color: black;
 }

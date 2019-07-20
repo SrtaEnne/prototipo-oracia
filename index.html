@@ -13,17 +13,18 @@
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
         <!--------------------------------------- NAVBAR --------------------------------------->
-        <nav id="nav-back">
-
-            <div class="nav-wrapper grey lighten-3">
-                <!--<a href="#" class="brand-logo nav-components"></a>-->           
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#sobre" class="nav-components">SOBRE O ORAC.IA</a></li>
-                    <li><a href="#editais" class="nav-components">EDITAIS</a></li>
-                    <li><a href="#algo" class="nav-components">ALGO AQUI</a></li>
-                </ul>
-            </div>
-          </nav>
+        <div class="navbar-fixed">
+	        <nav>
+	            <div class="nav-wrapper grey lighten-3">
+	                <!--<a href="#" class="brand-logo nav-components"></a>-->           
+	                <ul id="nav-mobile" class="right hide-on-med-and-down">
+	                    <li><a href="#sobre" class="nav-components">SOBRE O ORAC.IA</a></li>
+	                    <li><a href="#pesquisar" class="nav-components">PESQUISAR</a></li>
+	                    <li><a href="#algo" class="nav-components">GRÁFICOS</a></li>
+	                </ul>
+	            </div>
+	          </nav>
+	      </div>
 
         <!---------------------------------------  PARALLAX ------------------------------------- -->
         <main>  
@@ -40,25 +41,152 @@
                 <div class="parallax" id="parallax" style="text-align:center;"></div><br>
             </div>
         </main>
-        <!---------------------------------------  CONTENTS ------------------------------------- -->
-        <div class="row">
-            <div class="col s12 m9 l10">
-              <div id="sobre" class="section scrollspy">
-                <p>Content </p>
-              </div>
+        <!---------------------------------------  CONTENTS ------------------------------------- -->	
+        <div class="container">
+            <div id="pesquisar" class="section scrollspy">
+            	<div class="row">
+			        <div class="card-panel">
+					    <div class="row">
+					        <form class="col s12">
+					            <div class="row">
+					                <div class="input-field col s12">
+					                    <i class="material-icons prefix">account_circle</i>
+					                    <input id="name" type="text" class="validate">
+					                    <label for="name">Nome</label>
+					                </div>
+					            </div>
 
-              <div id="editais" class="section scrollspy">
-                <p>Content </p>
-              </div>
+					            <div class="row">
+					                <div class="input-field col s12">
+					                    <i class="material-icons prefix">email</i>
+					                    <input id="email" type="email" class="validate">
+					                    <label for="email">Email</label>
+					                </div>
+					            </div>
 
-              <div id="algo" class="section scrollspy">
-                <p>Content </p>
-              </div>
-            </div>
-        </div>
+					            <div class="row">
+					                <div class="input-field col s6">
+					                    <i class="material-icons prefix">lock</i>
+					                    <input id="password" type="password" class="validate">
+					                    <label for="password">Senha</label>
+					                </div>
+					                
+					                <div class="input-field col s6">
+					                    <input id="confirm-pass" type="password" class="validate">
+					                    <label for="confirm-pass">Confirmar senha</label>
+					                </div>
+					            </div>
+
+					            <div class="row">
+					                <div class="input-field col s12">
+					                    <button class="btn waves-effect waves-light right" type="submit" name="action">
+					                        Registrar
+					                        <i class="material-icons right">person</i>
+					                    </button>
+					                </div>
+            					</div>
+        					</form>
+    					</div>
+					</div>  
+        		</div>
         
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/app.js"></script>
+	            <div id="algo" class="section scrollspy">
+	                <p class="paragraph-title">GRÁFICOS</p>
+	                <canvas id="chartsDonuts"></canvas>
+	            </div>
+
+	            <div class="row site-corpo">
+	            	<div class="col s12 m9 l10">
+	              		<div id="sobre" class="section scrollspy">
+			                <p class="paragraph-title">SOBRE</p>
+							<p class="paragraph-text">
+			                	Visto a necessidade de analisar licitações finalizadas, com o objetivo de validar a integridade e confiabilidade de que ocorreu um processo justo por parte das empresas participantes por edital. O projeto Orac.ia se apresenta como uma ferramenta inteligente para gerar indicadores fazendo uma análise estatística e confiável sobre os valores apresentados pelas empresas, assim, podendo auxiliar nos processos de investigação para verificar se há existência de fraude ou não no processo licitatório em questão.
+
+			                	<ul id="ul-objetivo">Objetivos
+			                		<li class="li-especfication">
+				                		Exibição das Licitações por município e a filtragem das licitações por modalidade e por instituição;
+				                	</li>
+				                	<li class="li-especfication">
+				                		Seção para comparação entre Editais e Licitações.
+				                	</li>
+			                	</ul>
+	                		</p>
+	              		</div>
+	            	</div>
+        		</div>
+    		</div>
+		</div>
+		<!-- ................................. FOOTER ...................................... -->
+	<footer class="page-footer footer-background">
+    	<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<form class="col s12">
+            			<h5 class="white-text">OUVIDORIA</h5>
+            			<div class="row">
+              				<div class="input-field col s6">
+                				<input id="first_name" type="text" class="validate">
+                				<label for="first_name">Nome</label>
+              				</div>
+              				<div class="input-field col s6">
+                				<input id="last_name" type="text" class="validate">
+                				<label for="last_name">Sobrenome</label>
+              				</div>
+              				<div class="input-field col s12">
+				                <input id="email" type="email" class="validate">
+				                <label for="email">Email</label>
+              				</div>
+            			</div>
+            			<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s12">
+										<textarea id="textarea1" class="materialize-textarea"></textarea>
+										<label for="textarea1">Textarea</label>
+									</div>
+								</div>
+							</form>
+						</div>
+            			<button class="btn white waves-effect" id="btn-submit">Enviar</button>
+          			</form>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text" id="title-midia">Redes Sociais</h5>
+					<ul id="footer-media">
+						<li>
+              <a class="grey-text text-lighten-3" href="https://www.facebook.com/nataly.goncalo" target="resource window">
+                <img src="img/fb.png" class="circle" id="social-media3">
+              </a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="https://twitter.com/13h20min" target="resource window">
+                <img src="img/twitter.png" class="circle" id="social-media2">
+              </a>
+            </li>
+              <a class="grey-text text-lighten-3" href="https://www.instagram.com/13h20min/" target="resource window">
+                <img src="img/insta.png" class="circle" id="social-media1">
+              </a>
+            <li>
+            </li>
+					</ul>
+        </div>
+      </div>
+		</div>
+		<div class="footer-copyright grey darken-4">
+			<div class="container">
+				Copyright © 2018 Enne™ Inc.
+        <a class="grey-text text-lighten-4 right" href="https://github.com/Dogfalo/materialize/blob/master/LICENSE" target="resource window">MIT License</a>
+        <a class="grey-text text-lighten-4 right" href="http://neves768.com/" id="about" target="resource window">About</a>
+			</div>    
+		</div>
+	</footer>
+
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	    <script src="js/jquery-3.3.1.min.js"></script>
+	    <script src="js/materialize.min.js"></script>
+	    <script src="js/app.js"></script>
+	    <script src="js/js.js"></script>
     </body>
 </html>
