@@ -10,11 +10,28 @@
   $(document).ready(function(){
     $('.scrollspy').scrollSpy();
   });
+
+  // -------- BOTÃO SELECT ------- //
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+
 //----- PAGINAÇÃO ------- //
-$(document).ready(function () {
-  $('#dtBasicExample').DataTable();
-  $('.dataTables_length').addClass('bs-select');
-});
+
+$(document).ready(function(){
+      $('#dtBasicExample').DataTable({
+          "language": {
+                "lengthMenu": "",
+                "zeroRecords": "Nada encontrado",
+                "info": "Mostrando página _PAGE_ de _PAGES_",
+                "infoEmpty": "Nenhum registro disponível",
+                "infoFiltered": "(filtrado de _MAX_ registros no total)",
+                "páginarevious": "Anterior",
+                "Next": "Próximo",
+                "dataTables_filter  ": "Pesquisar"
+            }
+        });
+  });
 
   // --- DATA/HORA ----- //
 
