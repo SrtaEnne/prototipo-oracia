@@ -10,6 +10,41 @@
   $(document).ready(function(){
     $('.scrollspy').scrollSpy();
   });
+//----- PAGINAÇÃO ------- //
+$(document).ready(function () {
+  $('#dtBasicExample').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
+
+  // --- DATA/HORA ----- //
+
+$('.dataIniFim').pickadate({
+  selectMonths: true,
+  selectYears: 15,
+  // Título dos botões de navegação
+  labelMonthNext: 'Próximo Mês',
+  labelMonthPrev: 'Mês Anterior',
+  // Título dos seletores de mês e ano
+  labelMonthSelect: 'Selecione o Mês',
+  labelYearSelect: 'Selecione o Ano',
+  // Meses e dias da semana
+  monthsFull: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+  monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+  weekdaysFull: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
+  weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+  // Letras da semana
+  weekdaysLetter: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+  //Botões
+  today: 'Hoje',
+  clear: 'Limpar',
+  close: 'Fechar',
+  // Formato da data que aparece no input
+  format: 'dd/mm/yyyy',
+  onClose: function() {
+    $(document.activeElement).blur()
+  }
+   
+});
      
  // --------------------------- GRÁFICOS --------------------------- //
 
@@ -34,3 +69,6 @@ let meuDonutChart = new Chart(ctx, {
     data: dados,
     options: opcoes
 });
+
+
+
