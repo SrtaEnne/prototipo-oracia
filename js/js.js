@@ -26,9 +26,11 @@ $(document).ready(function(){
                 "info": "Mostrando página _PAGE_ de _PAGES_",
                 "infoEmpty": "Nenhum registro disponível",
                 "infoFiltered": "(filtrado de _MAX_ registros no total)",
-                "páginarevious": "Anterior",
-                "Next": "Próximo",
-                "dataTables_filter  ": "Pesquisar"
+                "previous": "Anterior",
+                "next": "Próximo",
+                "dataTables_filter  ": "Pesquisar",
+                "search": "Pesquisar"
+
             }
         });
   });
@@ -60,7 +62,7 @@ $(document).ready(function(){
 //   onClose: function() {
 //     $(document.activeElement).blur()
 //   }
-   
+//
 // });
      
  // --------------------------- GRÁFICOS --------------------------- //
@@ -73,7 +75,7 @@ let ctx = document.getElementById("chartsDonuts"); // chama o elemento CANVAS at
 	        backgroundColor: ['rgb(255, 99, 132)', 'rgb(255, 200, 10)', 'rgb(55, 99, 132)', 'rgb(0, 255, 0)']
 	    }],
 
-	    labels: ['Vermelho', 'Amarelo', 'Azul', 'Verde']
+	    labels: ['Empresa A', 'Empresa B', 'Empresa C', 'Empresa D']
 	};
 
 	let opcoes = {
