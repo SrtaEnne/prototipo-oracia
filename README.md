@@ -4,8 +4,8 @@ Protótipo do site Orac.io é uma aplicação de tecnologia de informação para
 # What is it?
 O intuito do Orac.io é a efetivação das políticas públicas e do combate à corrupção. Nesse caso, o protótipo é apenas a solução [parcial] front-end. 
 
-#### Para acessar a parte back-end, acesse: 
-https://github.com/JohnVictor2017/oracia
+#### Para acessar a parte back-end, clique <a href="https://github.com/JohnVictor2017/oracia">aqui.</a> 
+
 
 ## Colaboradores
 <table>
